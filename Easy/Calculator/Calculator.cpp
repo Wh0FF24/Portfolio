@@ -7,6 +7,7 @@
 
 #include <iostream>
 using namespace std;
+#include <cmath>
 
 int main() {
     // 2. implement the airthmetic operations
@@ -42,6 +43,16 @@ int main() {
                 } else {
                     cout << "Error: Division by zero." << endl;
                 }
+                break;
+            case '%':
+                if (num2 != 0) {
+                    cout << num1 << " % " << num2 << " = " << (int)num1 % (int)num2 << endl;
+                } else {
+                    cout << "Error: Division by zero." << endl;
+                }
+                break;
+            case '^':
+                cout << num1 << " ^ " << num2 << " = " << pow(num1, num2) << endl;
                 break;
             default:
                 cout << "Invalid operator. Please enter a valid operator." << endl;
